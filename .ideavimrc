@@ -1,0 +1,22 @@
+
+set scrolloff=10
+set linenumber
+set showmode
+set showcmd
+
+set smartcase
+set incsearch
+set hlsearch
+
+et clipboard+=unnamed
+
+let mapleader = " "
+
+set surround
+set highlightedyank
+set easymotion
+set notimeout
+set which-key
+let g:WhichKey_FontSize = 16
+
+map <leader>sf <action>(GotoFile)
