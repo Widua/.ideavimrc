@@ -8,7 +8,7 @@ set smartcase
 set incsearch
 set hlsearch
 
-et clipboard+=unnamed
+set clipboard+=unnamed
 
 let mapleader = " "
 
@@ -20,3 +20,8 @@ set which-key
 let g:WhichKey_FontSize = 16
 
 map <leader>sf <action>(GotoFile)
+map <leader>ff <action>(ReformatCode)
+map <leader>rr <action>(RenameElement)
+noremap U <C-r>
+
+noremap <leader>cc :edit ~/.ideavimrc<cr>
