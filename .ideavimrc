@@ -22,6 +22,11 @@ let g:WhichKey_FontSize = 16
 map <leader>sf <action>(GotoFile)
 map <leader>ff <action>(ReformatCode)
 map <leader>rr <action>(RenameElement)
+map <A-tab> <action>(PreviousTab)
+map <A-w> <action>(NextTab)
+map <A-q> <action>(CloseEditor)
 noremap U <C-r>
+
+map gi <action>(GotoImplementation)
 
 noremap <leader>cc :edit ~/.ideavimrc<cr>
