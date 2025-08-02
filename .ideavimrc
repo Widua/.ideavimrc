@@ -31,6 +31,9 @@ map <A-tab> <action>(PreviousTab)
 map <leader>ff <action>(ReformatCode)
 map <leader>rr <action>(RenameElement)
 
+"" CODE NAVIGATION
+inoremap <A-k> <Up>
+inoremap <A-j> <Down>
 
 "" REMAPS
 noremap U <C-r>
