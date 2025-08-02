@@ -1,31 +1,50 @@
+" Basic configuration
 set scrolloff=10
 set linenumber
 set showmode
 set showcmd
-
 set smartcase
 set incsearch
 set hlsearch
+let g:WhichKey_FontSize = 16
 
+" Clipboard
 set clipboard=unnamedplus
 
-let mapleader = " "
-
+" Plugins
 set surround
 set highlightedyank
 set easymotion
 set notimeout
 set which-key
-let g:WhichKey_FontSize = 16
 
+" Keybinds
+let mapleader = " "
+
+"" FILE NAVIGATION
 map <leader>sf <action>(GotoFile)
-map <leader>ff <action>(ReformatCode)
-map <leader>rr <action>(RenameElement)
-map <A-tab> <action>(PreviousTab)
 map <A-w> <action>(NextTab)
 map <A-q> <action>(CloseEditor)
+map <A-tab> <action>(PreviousTab)
+
+"" LSP Navigation
+nnoremap [[ <Action>(MethodUp)
+nnoremap ]] <Action>(MethodDown)
+
+"" CODE REFACTORING
+map <leader>ff <action>(ReformatCode)
+map <leader>rr <action>(RenameElement)
+
+
+"" REMAPS
 noremap U <C-r>
 
+"" GOTO KEYBINDS
 map gi <action>(GotoImplementation)
+map gt <action>(GotoTest)
+map gd <action>(GotoDeclaration)
 
-noremap <leader>cc :edit ~/.ideavimrc<cr>
+"" CODE GENERATION
+map <leader>gg <action>(Generate)
+map <leader>gc <action>(GenerateConstructor)
+map <leader>gt <action>(GenerateTestMethod)
