@@ -27,10 +27,6 @@ map <A-w> <action>(NextTab)
 map <A-q> <action>(CloseEditor)
 map <A-tab> <action>(PreviousTab)
 
-"" LSP Navigation
-nnoremap [[ <Action>(MethodUp)
-nnoremap ]] <Action>(MethodDown)
-
 "" CODE REFACTORING
 map <leader>ff <action>(ReformatCode)
 map <leader>rr <action>(RenameElement)
