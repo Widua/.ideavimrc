@@ -46,4 +46,3 @@ map gd <action>(GotoDeclaration)
 "" CODE GENERATION
 map <leader>gg <action>(Generate)
 map <leader>gc <action>(GenerateConstructor)
-map <leader>gt <action>(GenerateTestMethod)
