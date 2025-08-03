@@ -10,7 +10,7 @@ let g:WhichKey_FontSize = 16
 
 " Clipboard
 set clipboard=unnamedplus
-
+xnoremap <leader>p "\"_dP
 " Plugins
 set surround
 set highlightedyank
